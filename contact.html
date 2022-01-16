@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="js/jQuery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Tyson Hull - CV</title>
+  <style>
+    nav {
+        font-family: 'Exo 2', sans-serif;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 1.3em !important;
+        /* z-index: 999; */
+        padding: 1.3rem;
+    }
+    
+    a>i {
+      color: white;
+    }
+
+    body {
+      text-align: center;
+
+    }
+h1{
+  padding-top: 11%;
+}
+    form {
+      padding-top: 30%;
+      display: inline-block;
+      font-family: 'Exo2', sans-serif;
+      color: black;
+      width: 66%;
+
+    }
+
+    .form-control {
+      background-color: rgba(255, 255, 255, .4)
+    }
+
+    .btn-success {
+      color: black;
+      border-color: whitesmoke;
+    }
+
+    .btn {
+      background-color: purple;
+    }
+
+    .btn:hover {
+      background-color: black;
+      border-color: white;
+    }
+
+    .form-control::placeholder {
+      color: black;
+    }
+
+    .content{
+       padding-top:1%;
+     }
+
+     #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+  }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="d-flex w-100">
+      <a class="navbar-brand mr-0 active" href="index.html">[T/H]</a><br>
+      <a href="docs/Tyson [Kolb] Hull - Resume (5_18_2020).pdf" download target="blank"> <br> download resume</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center float-right" id="collapsingNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">contact</a>
+        </li>
+      </ul>
+  </nav>
+  <div class="content text-center my-auto" style="margin-top:10%">
+    <h1>Tyson Hull</h1>
+    <h3>Developer. Designer. Creative.</h3>
+    <h5><span>(360) 918-6500 </span><span>|| Tyson@BzDz.Biz</span></h5>
+  </div>
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/fireworks.mp4" type="video/mp4">
+  </video>
+
+  <!-- Optional: some overlay text to describe the video -->
+  <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_name"></label>
+            <input id="form_name" type="text" name="name" class="form-control" placeholder="first name *"
+              required="required" data-error="Firstname is required.">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_lastname"></label>
+            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="last name *"
+              required="required" data-error="Lastname is required.">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_email"></label>
+            <input id="form_email" type="email" name="email" class="form-control" placeholder="email *"
+              required="required" data-error="Valid email is required.">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_need"></label>
+            <select id="form_need" name="need" class="form-control" required="required"
+              data-error="Please specify your need.">
+              <option value=""></option>
+              <option value="Request quotation">Request project quote</option>
+              <option value="Request order status">Schedule a meeting</option>
+              <option value="Request copy of an invoice">Hire me!</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="form_message"></label>
+            <textarea id="form_message" name="message" class="form-control" placeholder="Message *" rows="4"
+              required="required" data-error="Please, leave us a message."></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <input type="submit" class="btn btn-success btn-send" value="Send message">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
